@@ -1,5 +1,5 @@
 ---
-title: About Alembic
+title: YOUR MOM 
 feature_text: |
   ## Alembic
   A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
