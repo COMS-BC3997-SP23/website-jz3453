@@ -3,7 +3,7 @@ title: Project Proposal - Clinical Trials
 feature_text: |
   ## Projects in CS
   A website to document my progress on my project!
-feature_image: "https://picsum.photos/1300/400?image=989"
+feature_image: "https://picsum.photos/1300/400?image=430"
 ---
 
 {% include button.html text="Github" icon="github" link="https://github.com/jz3453" color="#00916e" %}
