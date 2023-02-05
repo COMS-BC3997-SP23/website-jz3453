@@ -56,11 +56,12 @@ Moreover, NIH focus groups in 2011 found that many members of the general public
 - API Gateway to handle requests and responses
 - AWS Lambda for the backend logic to fetch data from DynamoDB
 
-### Why React?
-
+## Background Research
+### Front-End Framework: Why React?
+Other front-end frameworks: Vue.js, Ember.js, or Angular.js
 - Responsive user interface for website, web and mobile app
 - Flexible - can easily create web apps and transform them into mobile apps
-- Easy to learn
+- Easier to learn
 - Fast - you can start development instantly, and provides resources for developing reusable and easily integrable UI components that reduce development time
 - Great documentation - broad community support
 
@@ -68,6 +69,13 @@ Moreover, NIH focus groups in 2011 found that many members of the general public
 
 - A fixed set of resources and endpoints (Web URL Structure: domain/condition/trial name/number): RESTful APIs have a clear structure, with resources being identified by URIs and accessed using standard HTTP methods. This makes it easy to understand how the API works and how to interact with it, which is particularly useful when the resources and endpoints are well-defined and unlikely to change.
 - Support caching: RESTful APIs rely on standard HTTP caching mechanisms, which makes it easy to cache responses and improve performance. Caching is not built-in to GraphQL, but can be implemented with additional libraries.
+
+### Why use REST API over HTTP API (both offered by AWS API Gateway)?
+*Development:*
+<img width="518" alt="Screen Shot 2023-02-05 at 2 57 18 PM" src="https://user-images.githubusercontent.com/97906628/216841765-dad605b7-f1d5-40b2-b3a5-612a871ca0fc.png">
+
+*Integrations:*
+<img width="646" alt="Screen Shot 2023-02-05 at 2 58 20 PM" src="https://user-images.githubusercontent.com/97906628/216841817-f9f97219-21cc-4ecf-b823-2323a2bc6b72.png">
 
 ### Why AWS?
 
