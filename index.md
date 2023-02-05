@@ -72,9 +72,11 @@ Other front-end frameworks: Vue.js, Ember.js, or Angular.js
 
 ### Why use REST API over HTTP API (both offered by AWS API Gateway)?
 *Development:*
+
 <img width="518" alt="Screen Shot 2023-02-05 at 2 57 18 PM" src="https://user-images.githubusercontent.com/97906628/216841765-dad605b7-f1d5-40b2-b3a5-612a871ca0fc.png">
 
 *Integrations:*
+
 <img width="646" alt="Screen Shot 2023-02-05 at 2 58 20 PM" src="https://user-images.githubusercontent.com/97906628/216841817-f9f97219-21cc-4ecf-b823-2323a2bc6b72.png">
 
 ### Why AWS?
