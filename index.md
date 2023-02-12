@@ -104,3 +104,35 @@ Other front-end frameworks: Vue.js, Ember.js, or Angular.js
   - User profile page
   - Notification features
 - By end of April: add caching?? Elasticache?
+
+
+# Brainstorm Session: How will our Data be stored in DynamoDB?
+![Scratch Paper-1](https://user-images.githubusercontent.com/97906628/218331572-1c9c5b9f-5827-4e1f-bf76-b043ee6add00.jpg)
+
+![Scratch Paper-3](https://user-images.githubusercontent.com/97906628/218331590-20497865-71ab-4890-af4e-a4a719f35957.jpg)
+
+
+## Background: How to Integrate REST API on API Gateway with Lambda
+There are two methods to create an API with Lambda integration, via Lambda proxy integration or Lambda non-proxy integration.
+
+### Lambda Proxy Integration
+The Lambda proxy integration allows the client to call a single Lambda function in the backend. 
+
+In Lambda proxy integration, when the client makes a request, the API Gateway forwards the request to Lambda without transforming/modifying it. When a client submits an API request, API Gateway passes to the integrated Lambda function the raw request as-is. This request data includes the request headers, query string parameters, URL path variables, payload, and API configuration data. 
+
+> Notes: This is helpful in my project in that I can easily access the URL path variables by parsing event.path to retrieve information on what page the user wants to pull up. (Web URL Structure: domain/condition/trial name/number)
+> ![Screen Shot 2023-02-12 at 2 00 35 PM](https://user-images.githubusercontent.com/97906628/218331323-d992f10d-796c-4c1d-bf8a-1667145d13f7.png)
+
+
+For API Gateway to pass the Lambda output as the API response to the client, the Lambda function must return the result in this format.
+![Screen Shot 2023-02-12 at 1 54 47 PM](https://user-images.githubusercontent.com/97906628/218331021-896f2818-8414-48f1-905c-b661066ef0e3.png)
+
+> Notes: The response body must be a string, whereas I want to return data from the DynamoDB table as a JSON response.
+
+### Lambda Non-Proxy Integration
+In Lambda non-proxy integration, when the client makes a request, the API Gateway is able to transform it and then forwards it to the lambda. Similarly, when the response data comes from the lambda function to the API Gateway, it sets the header, status code etc.
+
+Lambda function for the Lambda custom integration only takes input from the API Gateway API integration request body, provided that API Gateway maps the required API request parameters to the integration request body before forwarding the client request to the backend. For this to happen, the API developer must create a mapping template and configure it on the API method when creating the API.
+
+The function can return an output of any JSON object, a string, a number, a Boolean, or even a binary blob. 
+![Screen Shot 2023-02-12 at 1 58 36 PM](https://user-images.githubusercontent.com/97906628/218331219-60c62782-ef47-4e97-bde8-c3832eefd321.png)
