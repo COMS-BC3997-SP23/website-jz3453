@@ -128,11 +128,18 @@ For API Gateway to pass the Lambda output as the API response to the client, the
 ![Screen Shot 2023-02-12 at 1 54 47 PM](https://user-images.githubusercontent.com/97906628/218331021-896f2818-8414-48f1-905c-b661066ef0e3.png)
 
 > Notes: The response body must be a string, whereas I want to return data from the DynamoDB table as a JSON response.
+> Update: Was informed that you can convert JSON to string using stringify() then back with JSON.parse(). However, I'm a little concerned about any data getting "mistranslated".
 
 ### Lambda Non-Proxy Integration
 In Lambda non-proxy integration, when the client makes a request, the API Gateway is able to transform it and then forwards it to the lambda. Similarly, when the response data comes from the lambda function to the API Gateway, it sets the header, status code etc.
 
 Lambda function for the Lambda custom integration only takes input from the API Gateway API integration request body, provided that API Gateway maps the required API request parameters to the integration request body before forwarding the client request to the backend. For this to happen, the API developer must create a mapping template and configure it on the API method when creating the API.
 
-The function can return an output of any JSON object, a string, a number, a Boolean, or even a binary blob. 
 ![Screen Shot 2023-02-12 at 1 58 36 PM](https://user-images.githubusercontent.com/97906628/218331219-60c62782-ef47-4e97-bde8-c3832eefd321.png)
+
+The function can return an output of any JSON object, a string, a number, a Boolean, or even a binary blob. 
+
+> Notes: According to [StackOverflow](https://stackoverflow.com/questions/42474264/lambda-integration-vs-lambda-proxy-pros-and-cons), Lambda Non-Proxy Integration involves a lot more of work to set it up, but it allows the developer to decouple what the lambda receives and returns, and how it gets mapped to different HTTP status codes, headers, and payloads.
+> According to Rick Haffey, "Using Proxy Integration forces (at least a subset of) that responsibility onto the Lambda function. (i.e. knowing how to interpret and decide on HTTP headers, query parameters, status codes, etc.). In doing that, I feel that it muddies the responsibility of the backing Lambda function -- Lambda now needs to both handle whatever "business" logic it's being called to do, and also handle interpreting the incoming HTTP values and decide on the outgoing HTTP response values."
+> Also what my supervisor said :).
+> In the long run, most developers seem to prefer non-proxy integration over proxy integration, so I would rather set it up now rather than use proxy integration and have to rebuild the API later.
