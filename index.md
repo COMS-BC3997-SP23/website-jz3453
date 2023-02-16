@@ -143,3 +143,12 @@ The function can return an output of any JSON object, a string, a number, a Bool
 > According to Rick Haffey, "Using Proxy Integration forces (at least a subset of) that responsibility onto the Lambda function. (i.e. knowing how to interpret and decide on HTTP headers, query parameters, status codes, etc.). In doing that, I feel that it muddies the responsibility of the backing Lambda function -- Lambda now needs to both handle whatever "business" logic it's being called to do, and also handle interpreting the incoming HTTP values and decide on the outgoing HTTP response values."
 > Also what my supervisor said :).
 > In the long run, most developers seem to prefer non-proxy integration over proxy integration, so I would rather set it up now rather than use proxy integration and have to rebuild the API later.
+
+## Update to Timeline (2/16):
+Dedicate entire month of February to building out home page, condition pages, and trial pages.
+
+### New Feature Alert:
+Add tree structure to show related mesh term taxonomy.
+Something like this:
+<img width="568" alt="Screen Shot 2023-02-16 at 1 16 02 AM" src="https://user-images.githubusercontent.com/97906628/219283862-f0b7053e-21d8-4236-85c5-27c3fdadc5a7.png">
+[link](https://mui.com/material-ui/react-tree-view/)
