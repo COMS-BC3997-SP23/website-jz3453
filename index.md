@@ -144,11 +144,28 @@ The function can return an output of any JSON object, a string, a number, a Bool
 > Also what my supervisor said :).
 > In the long run, most developers seem to prefer non-proxy integration over proxy integration, so I would rather set it up now rather than use proxy integration and have to rebuild the API later.
 
-## Update to Timeline (2/16):
+## Update to Timeline:
 Dedicate entire month of February to building out home page, condition pages, and trial pages.
+
+## Progress Update (2/16):
+Scrapped and rewrote code to "component-ize" my code better. Also learned how to use the React Router ([tutorial](https://upmostly.com/tutorials/how-to-pass-param-to-a-component-in-react-router#:~:text=React%20Router%20v6%20has%20made,pass%20props%20to%20the%20component.
+)).
+
+React Router enables "client side routing". Client side routing allows your app to update the URL from a link click without making another request for another document from the server. Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information. [article](https://reactrouter.com/en/main/start/overview)
+
+I used the Router to allow for switching between the ConditionPage and TrialPages.
+<img width="838" alt="Screen Shot 2023-02-16 at 1 24 40 AM" src="https://user-images.githubusercontent.com/97906628/219285415-58f98cbb-2e25-49a3-97f2-c85211fc423d.png">
+
+It reroutes correctly when I click on a condition to bring up all the trials related to that condition, but the trial page is not being generated.
+> This was because I was using async so that I could await fetch() data from my API. When I deleted the asynchronous components and instead just hardcoded in the list, the page generated.
+
+Task: Figure out how to use Async/Await in the functional component React.js
 
 ### New Feature Alert:
 Add tree structure to show related mesh term taxonomy.
 Something like this:
 <img width="568" alt="Screen Shot 2023-02-16 at 1 16 02 AM" src="https://user-images.githubusercontent.com/97906628/219283862-f0b7053e-21d8-4236-85c5-27c3fdadc5a7.png">
+
 [link](https://mui.com/material-ui/react-tree-view/)
+
+Task: Think about how to dynamically build such tree given a trial. Also keep in mind that a trial could fit along multiple paths in the tree.
