@@ -147,7 +147,7 @@ The function can return an output of any JSON object, a string, a number, a Bool
 ## Update to Timeline:
 Dedicate entire month of February to building out home page, condition pages, and trial pages.
 
-## Progress Update (2/16):
+## Progress Update (2/16 1:14AM):
 Scrapped and rewrote code to "component-ize" my code better. Also learned how to use the React Router ([tutorial](https://upmostly.com/tutorials/how-to-pass-param-to-a-component-in-react-router#:~:text=React%20Router%20v6%20has%20made,pass%20props%20to%20the%20component.
 )).
 
@@ -169,3 +169,8 @@ Something like this:
 [link](https://mui.com/material-ui/react-tree-view/)
 
 Task: Think about how to dynamically build such tree given a trial. Also keep in mind that a trial could fit along multiple paths in the tree.
+
+
+## Progress Update (2/16 10:11PM):
+Task Completed: Figured out how to "make" (more like fake) an asynchronous call in a functional component: using useEffect() and fetch().
+![Screen Shot 2023-02-16 at 10 14 25 PM](https://user-images.githubusercontent.com/97906628/219540507-0c75bba3-6d94-4997-be04-e6b8e3b41d05.png)
