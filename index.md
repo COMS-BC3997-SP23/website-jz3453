@@ -148,6 +148,11 @@ The function can return an output of any JSON object, a string, a number, a Bool
 Dedicate entire month of February to building out home page, condition pages, and trial pages.
 
 ## Progress Update (2/16 1:14AM):
+Something that took me a *looooooong* time to figure out on the backend: *THE CORS ERROR*.
+Solution: Simply clicking Enable CORS under Resource Options on API Gateway does not always work. You may need to go in and manually add in the headers under Method Response and the Header Mappings under Integration Response.
+![Screen Shot 2023-02-16 at 10 22 31 PM](https://user-images.githubusercontent.com/97906628/219541744-190e76e1-78b4-4514-a916-db8b649fad1c.png)
+![Screen Shot 2023-02-16 at 10 23 00 PM](https://user-images.githubusercontent.com/97906628/219541754-2d097f61-f047-4b5d-ab5e-a09befa73f74.png)
+
 Scrapped and rewrote code to "component-ize" my code better. Also learned how to use the React Router ([tutorial](https://upmostly.com/tutorials/how-to-pass-param-to-a-component-in-react-router#:~:text=React%20Router%20v6%20has%20made,pass%20props%20to%20the%20component.
 )).
 
