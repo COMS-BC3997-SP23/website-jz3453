@@ -181,3 +181,18 @@ Task Completed: Figured out how to "make" (more like fake) an asynchronous call 
 ![Screen Shot 2023-02-16 at 10 14 25 PM](https://user-images.githubusercontent.com/97906628/219540507-0c75bba3-6d94-4997-be04-e6b8e3b41d05.png)
 
 [tutorial](https://www.freecodecamp.org/news/fetch-data-react/)
+
+## Update on Using React (2/19 5:40PM):
+In the process of exploring some of the Components offered by MUI.
+
+Import these packages:
+@mui/material, @mui/icons-material, @emotion/styled, @emotion/react
+
+### Using these MUI Components:
+* [AppBar](https://mui.com/material-ui/react-app-bar/)
+  ![Screen Shot 2023-02-19 at 5 44 23 PM](https://user-images.githubusercontent.com/97906628/219979803-56a596d8-91d8-46a0-84c5-e43144de4777.png)
+* [Drawer](https://mui.com/material-ui/react-drawer/)
+  ![Screen Shot 2023-02-19 at 5 45 37 PM](https://user-images.githubusercontent.com/97906628/219979853-7db6fd50-44a9-49c5-9812-5bf9bc85c3e3.png)
+* [Menu](https://mui.com/material-ui/react-menu/)
+  ![Screen Shot 2023-02-19 at 5 46 42 PM](https://user-images.githubusercontent.com/97906628/219979906-0699ac57-09f2-45e1-a75d-a7d68f26a8cb.png)
+
