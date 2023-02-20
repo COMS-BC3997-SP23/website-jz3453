@@ -195,7 +195,7 @@ Import these packages:
 
 ### Progress Check:
 **Timestamp 8:22PM**
-Finished building out the Primary App Bar with a Search Bar & Icons.
+Finished building out the Primary App Bar with a Search Bar & Icons. *PrimarySearchAppBar Component*
 ![Screen Shot 2023-02-19 at 8 24 02 PM](https://user-images.githubusercontent.com/97906628/219988783-d25185e9-c656-4bdb-9841-c6bd1da320ac.png)
 
 Accounted for Mobile Rendering to make App Bar flexible for Desktop and Mobile viewing.
