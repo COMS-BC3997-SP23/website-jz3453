@@ -190,9 +190,18 @@ Import these packages:
 
 ### Using these MUI Components:
 * [AppBar](https://mui.com/material-ui/react-app-bar/)
-  ![Screen Shot 2023-02-19 at 5 44 23 PM](https://user-images.githubusercontent.com/97906628/219979803-56a596d8-91d8-46a0-84c5-e43144de4777.png)
 * [Drawer](https://mui.com/material-ui/react-drawer/)
-  ![Screen Shot 2023-02-19 at 5 45 37 PM](https://user-images.githubusercontent.com/97906628/219979853-7db6fd50-44a9-49c5-9812-5bf9bc85c3e3.png)
 * [Menu](https://mui.com/material-ui/react-menu/)
-  ![Screen Shot 2023-02-19 at 5 46 42 PM](https://user-images.githubusercontent.com/97906628/219979906-0699ac57-09f2-45e1-a75d-a7d68f26a8cb.png)
+
+### Progress Check:
+**Timestamp 8:22PM**
+Finished building out the Primary App Bar with a Search Bar & Icons.
+![Screen Shot 2023-02-19 at 8 24 02 PM](https://user-images.githubusercontent.com/97906628/219988783-d25185e9-c656-4bdb-9841-c6bd1da320ac.png)
+
+Accounted for Mobile Rendering to make App Bar flexible for Desktop and Mobile viewing.
+![Screen Shot 2023-02-19 at 8 25 52 PM](https://user-images.githubusercontent.com/97906628/219988933-e29df8ed-71ef-4bbd-b016-e5028cae76f8.png)
+
+Included Menu dropdown when Profile Icon is clicked.
+![Screen Shot 2023-02-19 at 8 27 25 PM](https://user-images.githubusercontent.com/97906628/219989116-d69d66b8-e1d8-4fd7-b4cb-bc39e9a444eb.png)
+
 
